@@ -1,0 +1,53 @@
+.login {
+  position: relative;
+  background-size: cover;
+  padding-top: 190px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  .backgroung {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 800px;
+    height: 100vh;
+    background: url('~@/assets/background.jpg');
+    background-position: top;
+    background-size: cover;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 100vh;
+      width: 100vw;
+      background-color: #0002;
+      z-index: 1;
+    }
+  }
+}
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  .title {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+  }
+  .form {
+    padding: 20px;
+  }
+  .submit {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .register {
+    margin-top: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

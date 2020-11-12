@@ -1,0 +1,22 @@
+@import '~@/assets/css/mixin.less';
+
+.header {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+    .textEllipsis();
+  }
+}

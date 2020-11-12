@@ -1,0 +1,29 @@
+// 背景框,固定
+.pullDown {
+  position: relative;
+  width: 100vw;
+  overflow: auto;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0px;
+  width: 100vw;
+  transition: top 0.1s;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  color: #1b91ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+
+  .spinIcon {
+    padding: 0 10px;
+  }
+}
